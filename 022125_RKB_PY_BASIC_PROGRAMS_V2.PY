@@ -58,4 +58,14 @@ def find_duplicates(arr):
         seen.add(num)
     return None
 
-print(find_duplicates([1, 3, 4, 2, 2]))    
+print(find_duplicates([1, 3, 4, 2, 2]))
+
+## Check if a number is a armstrong number 
+
+def is_armstrong(n):
+    digits = list(map(int, str(n)))
+    power = len(digits)
+    return sum(d ** power for d in digits ) == n
+
+print(is_armstrong(153))
+print(is_armstrong(122))
